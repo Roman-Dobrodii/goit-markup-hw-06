@@ -61,7 +61,7 @@
           <h1 class="hero-title">
             эффективные решения<br />для вашего бизнеса
           </h1>
-          <a href="/" class="button-hero">Заказать услугу</a>
+          <button class="button-hero" data-modal-open>Заказать услугу</button>
         </section>
       </div>
 
@@ -509,15 +509,28 @@
                 placeholder="E-mail"
               />
             </label>
-            <a href="/" class="button-footer"
-              >Подписаться
+            <button class="button-footer">
+              Подписаться
               <svg class="subscribe-icon">
-                <use href="./images/sprite.svg#icon-plane"></use></svg
-            ></a>
+                <use href="./images/sprite.svg#icon-plane"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
       <p class="copyright container">2020 | Developed by GoIT Students</p>
     </footer>
+
+    <!-- Modal window -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <form class="form">
+          <b class="call-modal">Оставьте свои данные, мы вам перезвоним</b>
+          <button class="send" type="submit">Отправить</button>
+        </form>
+        <button class="close-modal" data-modal-close>X</button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
