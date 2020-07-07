@@ -524,13 +524,40 @@
     <!-- Modal window -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <form class="form">
+        <form class="form js-speaker-form">
           <b class="call-modal">Оставьте свои данные, мы вам перезвоним</b>
+          <label class="label">
+            <input type="text" name="name" class="form-field" placeholder="" />
+          </label>
+          <label class="label">
+            <input type="tel" name="tel" class="form-field" placeholder="" />
+          </label>
+          <label class="label">
+            <input
+              type="email"
+              name="email"
+              class="form-field"
+              placeholder=""
+            />
+          </label>
+          <textarea
+            name="comment"
+            class="comment"
+            rows="6"
+            placeholder="Комментарий"
+          ></textarea>
+          <label class="checkbox-label">
+            <span class="check-text"
+              >Соглашаюсь с рассылкой и принимаю
+              <a href="/">Условия договора</a></span
+            >
+          </label>
           <button class="send" type="submit">Отправить</button>
         </form>
         <button class="close-modal" data-modal-close>X</button>
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/form.js"></script>
   </body>
 </html>
