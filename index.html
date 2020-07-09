@@ -61,7 +61,9 @@
           <h1 class="hero-title">
             эффективные решения<br />для вашего бизнеса
           </h1>
-          <button class="button-hero" data-modal-open>Заказать услугу</button>
+          <button class="button-hero" data-modal-open>
+            Заказать услугу
+          </button>
         </section>
       </div>
 
@@ -527,26 +529,28 @@
         <form class="form js-speaker-form">
           <b class="call-modal">Оставьте свои данные, мы вам перезвоним</b>
           <label class="label">
-            <input type="text" name="name" class="form-field" placeholder="" />
+            <input type="text" name="name" class="form-field" placeholder=" " />
           </label>
           <label class="label">
-            <input type="tel" name="tel" class="form-field" placeholder="" />
+            <input type="tel" name="tel" class="form-field" placeholder=" " />
           </label>
           <label class="label">
             <input
               type="email"
               name="email"
               class="form-field"
-              placeholder=""
+              placeholder=" "
             />
           </label>
           <textarea
             name="comment"
             class="comment"
             rows="6"
-            placeholder="Комментарий"
+            placeholder=" "
           ></textarea>
           <label class="checkbox-label">
+            <input class="checkbox" type="checkbox" name="agreement" />
+            <span class="checkbox-icon"></span>
             <span class="check-text"
               >Соглашаюсь с рассылкой и принимаю
               <a href="/">Условия договора</a></span
@@ -554,7 +558,11 @@
           </label>
           <button class="send" type="submit">Отправить</button>
         </form>
-        <button class="close-modal" data-modal-close>X</button>
+        <button class="close-modal" data-modal-close>
+          <svg class="icon-close">
+            <use href="./images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
       </div>
     </div>
     <script src="./js/modal.js"></script>
